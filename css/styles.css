@@ -1,4 +1,3 @@
-
 /*
 font-family: "century-gothic", sans-serif;
 font-weight: 400;
@@ -28,10 +27,9 @@ body {
 .line{
 border-left:2px solid #F3ccff;
 height:75%;
-z-index:0;
+margin-top:100px;
 margin-left:10px;
 position:fixed;
-/*center vertical line vertically*/
 }
 
 .sidenav{
@@ -99,13 +97,64 @@ p {
 	left:0;
 	bottom:0;
 	width: 700px;
-	height:700px;	
+	height:600px;	
 
 }
 
 .vector{
-	height:200px;
-	width:200px;
+	height:225px;
+	width:225px;
+	float:right;
+	margin-top:320px;
+	margin-right:160px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 	
 }
+.icon{
+	display:none;
+}
+	
+@media only screen and (min-width: 1600px){
+body{	
+	height:95%;
+	background-size: 100% 100% ;
+}
+.vector{
+	height:300px;
+	width:300px;
+	margin-right:350px;
+	margin-top:300px;
+}
+}
+
+@media only screen and (max-width:800px){
+	body{
+	background-image: url("../images/mob-vector-1.png");
+	background-size:cover;
+	
+	}
+	
+	
+	.sidenav a {
+		display:none;
+	}
+	
+	.vector{
+		display:none;
+	}
+	
+	.line{
+		display:none;
+	}
+	h1{
+		font-size:32px;
+		text-indent:0.5em;
+	}
+	p{
+		font-size:25px;
+	}
+	
+}
+
 	
