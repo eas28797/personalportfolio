@@ -8,23 +8,42 @@
 		<title>Elizabeth Sears</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 		<link rel="stylesheet" href="https://use.typekit.net/wsw6zxf.css">
+		<script src="https://kit.fontawesome.com/951d00426e.js" crossorigin="anonymous"></script>
+		<script src="scripts/script.js" defer></script>
 		
 		</head>
+		
 	<body>
+	<header>
 		<div class="line"></div>
-		<nav class="sidenav">
+		<nav class="sidenav" id="mySidenav">
+			<div class="openMenu"><i class="fa fa-bars" style="color: #f0d9e7;"></i></div>
+			<div class="mainMenu">
 			<a href="#home" class="active">Home</a>
 			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
+			<button class="dropdown-btn">Projects
+			<i class="fa-solid fa-angle-down fa-lg" style="color: #f0d9e7;"></i>
+			</button>
+			<div class="dropdown-cont">
+				<a href="#UI"> UI </a>
+				<a href="#webdesign">Web Design</a>
+				<a href="#javascript">JavaScript</a>
+				<a href="#graphicdesign">Graphic Design</a>
+			</div>
 			<a href="#contact">Contact</a>
+			<div class="closeMenu"><i class="fa fa-times"></i></div>
+			</div>
+			<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+			</a> -->
 		</nav>
-	<div>
+	</header>	
+
 	<section id="home"> 
-		
-		<div class="home-content">
+	<div class="home-content">
 	<div class="text">
 	
-	<h1>Hi! I'm Elizabeth Sears <h1>
+	<h1>Hi! I'm Elizabeth Sears </h1>
 	<p> A web designer/developer </p>
 	
 	
@@ -33,19 +52,46 @@
 	<img src="images/computervec.png" alt="Web design vector" class="vector"/> 
 	</div>
 	
-		
-		
-		
-		
-		
-		</section>
-	<section id="about">  </seciton>
-	<section id="projects">  </seciton>
-	<section id="contact"> </section>
+
+	</section>
+	<!--About Page-->
+	<section id="about">
+	 <h1 class="about"> About me </h1>
+	 <div class="flex">
+	 <img src="images/me.jpg" alt=" A picture of Elizabeth" class="me"/>
+	 
+	 <p class="aboutp">
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+	</div>
+	<h1 class="about"> Qualifications </h1>
+	<div class="slider">
+	<p class="slide">HTML</p>
+	<p class="slide">CSS</p>
+	<p class="slide">JavaScript</p>
+	<p class="slide">Abobe Suite</p>
+	<p class="slide">Figma</p>
 	</div>
 	
+
+
+
+
+
+	</section>
+	<section id="projects"> </section>
+	<section id="contact"> </section>
 	
 	
+	
+	
+	
+	
+	<footer>
+	<i class="fa-brands fa-instagram fa-lg toggle-btn" style="color: #f0d9e7;"></i>
+	<i class="fa-brands fa-dribbble fa-lg toggle-btn" style="color: #f0d9e6;"></i>
+	
+	</footer>
 
 	
 	
@@ -60,38 +106,3 @@
 	
 	
 	</body>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</html>
