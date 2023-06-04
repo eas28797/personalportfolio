@@ -226,6 +226,31 @@ body{
 		color:#F3CCFF;
 		transition: 0.3s ease;
 	}
+.arrow{
+		display:block;
+		font-size:44px;
+		
+	}
+
+	.slider{ 
+	overflow-x:scroll;
+}
+
+	.me{
+		height:275px;
+		width:auto;
+	}
+	
+	.flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	padding:20px;
+	margin:20px;
+}
+
 
 	
 }
