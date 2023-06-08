@@ -159,102 +159,6 @@ p {
 }
 
 
-	
-@media screen and (min-width: 1600px){
-body{	
-	height:95%;
-	background-size: 100% 100% ;
-}
-.vector{
-	height:300px;
-	width:300px;
-	margin-right:350px;
-	margin-top:300px;
-}
-}
-
-@media screen and (max-width:800px){
-	body{
-	background-image: url("../images/mob-vector-1.png");
-	background-size:cover;
-	
-	}
-	
-		
-	.vector{
-		display:none;
-	}
-	
-	.line{
-		display:none;
-	}
-	h1{
-		font-size:39px;
-		text-indent:0.5em;
-	}
-	p{
-		font-size:25px;
-	}
-	nav .mainMenu{
-		position:fixed;
-		top:0;
-		left:0;
-		width:300px;
-		height:500px;
-		z-index:3;
-		flex-direction:column;
-		justify-content:flex-start;
-		background-color: #3C3A53;
-		transition: 1s ease;
-		display:none;
-		font-size:25px;
-	}
-	nav .mainMenu .closeMenu {
-		display:block;
-		position:absolute;
-		top: 10px;
-		left: 20px;
-	}
-	nav .openMenu{
-		display:block;
-		
-		
-	}
-	
-	nav .mainMenu a:hover; {
-		font-size:27px;
-		color:#F3CCFF;
-		transition: 0.3s ease;
-	}
-.arrow{
-		display:block;
-		font-size:44px;
-		
-	}
-
-	.slider{ 
-	overflow-x:scroll;
-}
-
-	.me{
-		height:275px;
-		width:auto;
-	}
-	
-	.flex{
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-	gap:20px;
-	padding:20px;
-	margin:20px;
-}
-
-
-	
-}
-
 footer{
 	position:sticky;
   bottom: 0;
@@ -269,6 +173,9 @@ footer{
 	padding:5px;
 }
 
+.arrow{
+	display:none;
+}
 
 /*About Section*/
 
@@ -280,7 +187,7 @@ body #about{
 	height:100%;
 }
 
-.about{
+h2{
 	font-family: "century-gothic", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -333,4 +240,194 @@ body #about{
 	background-color:#3C3A53;
 	text-align:center;
 	padding:30px;
+	
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1600px){
+body{	
+	height:95%;
+	background-size: 100% 100% ;
+}
+.vector{
+	height:300px;
+	width:300px;
+	margin-right:350px;
+	margin-top:300px;
+}
+}
+
+@media screen and (max-width:800px){
+	body{
+	background-image: url("../images/mob-vector-1.png");
+	background-size:contain;
+	
+	
+	}
+	
+		
+	.vector{
+		display:none;
+	}
+	
+	.line{
+		display:none;
+	}
+	h1{
+		font-size:19px;
+		text-indent:0.5em;
+	}
+	p{
+		font-size:15px;
+	}
+	nav .mainMenu{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:500px;
+		z-index:3;
+		flex-direction:column;
+		justify-content:flex-start;
+		background-color: #3C3A53;
+		transition: 1s ease;
+		display:none;
+		font-size:25px;
+	}
+	nav .mainMenu .closeMenu {
+		display:block;
+		position:absolute;
+		top: 5px;
+		left: 5px;
+		
+	}
+	nav .openMenu{
+		display:block;
+		position:fixed;
+		
+	}
+	
+	nav .mainMenu a:hover; {
+		font-size:27px;
+		color:#F3CCFF;
+		transition: 0.3s ease;
+	}
+	
+	.arrow{
+		display:block;
+		font-size:44px;
+		
+	}
+
+	.slider{ 
+	overflow-x:scroll;
+}
+
+	.me{
+		height:275px;
+		width:auto;
+	}
+	
+	.flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	padding:20px;
+	margin:20px;
+}
+
+
+
+}
+
+/* Project Pages */
+
+
+.descrip{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 16px;
+	text-align:left;
+	text-indent:12em;
+}
+
+
+
+figure{
+	display:flex;
+	flex-direction: column;
+	width: 33%;
+}	
+
+figure img{
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+figure figcaption h3{
+	text-align:center;
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 22px;
+}
+
+figure figcaption p{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 16px;
+	text-align:center;
+}
+figure figcaption{
+	text-align:center;
+	width:63%;
+}
+.display{
+	display:flex;
+	justify-content:center;
+	margin-left:235px;
+}
+
+
+
+
+@media screen and (max-width: 1584px){
+	body{
+		height:100%;
+		width:100%;
+		background-size:100% 100%;
+		
+	}
+.text{ 
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	justify-content:center;
+	
+}
+
+p{
+	margin-top:5px;
+}
+
+.vector{
+
+	margin-top:200px;
+	
+}
+		
+	
 }
