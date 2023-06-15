@@ -1,0 +1,477 @@
+
+/*
+font-family: "century-gothic", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "ocr-a-std", monospace;
+font-weight: 400;
+font-style: normal;
+*/
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html{
+	height:100%;
+}
+
+body {
+	background-color:#2e2c40;
+	background-image: url("../images/dt-vector-1.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height:100%;
+}
+section{
+	
+min-height:100vh;
+}
+
+/*Navigation*/
+.line{
+border-left:2px solid #F3ccff;
+height:75%;
+margin-top:100px;
+margin-left:10px;
+position:fixed;
+}
+
+.mainMenu{
+	height: 100%; 
+  width: 250px; 
+  position: fixed;  
+  top: 0; 
+  left: 0;
+  overflow-x: hidden; 
+  padding-top: 20px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  margin-left:25px;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px 10px 10px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #f0d9e7;
+  display: block;
+  font-family: "century-gothic", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.sidenav a:hover,
+.sidenav a.active {
+  color: #F3CCFF;
+  font-size: 30px;
+	text-indent: 1em;
+}
+.active{
+	 color: #F3CCFF;
+  font-size: 30px;
+	text-indent: 1em;
+}
+
+.openMenu{
+	font-size:24px;
+	cursor:pointer;
+	display:none;
+	justify-content:flex-start;
+		align-items:flex-start;
+	
+}
+nav .mainMenu .closeMenu {
+	font-size:24px;
+	display:none;
+	cursor:pointer;
+	color:#f0d9e7;
+}
+
+
+
+.dropdown-btn{
+	font-size: 28px;
+  color: #f0d9e7;
+  display: block;
+  font-family: "century-gothic", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	padding: 10px 10px 10px 16px;
+  text-decoration: none;
+  cursor:pointer;
+  outline:none;
+  background:none;
+  border:none;
+  text-align:left;
+}
+
+.dropdown-cont{
+	display:none;
+	text-indent: 0.7em;
+}
+/*homepage begin*/
+h1 {
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 40px;
+}
+
+p {
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 28px;
+	text-indent: 1em;
+}
+
+.home-content{
+	
+}
+
+.text{
+	position:absolute;
+	z-index:2;
+	margin:auto;
+	top:20;
+	right:0;
+	left:0;
+	bottom:0;
+	width: 700px;
+	height:600px;	
+
+}
+
+.vector{
+	height:225px;
+	width:225px;
+	float:right;
+	margin-top:320px;
+	margin-right:160px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	
+}
+
+
+footer{
+	position:sticky;
+  bottom: 0;
+  left: 0;
+	padding:12px;
+	display:flex;
+	justify-content: flex-end;
+	width:100%;
+	
+}
+.toggle-btn{
+	padding:5px;
+}
+
+.arrow{
+	display:none;
+}
+
+/*About Section*/
+
+body #about{
+	background-color:#2e2c40;
+	background-image:url('../images/dt-vector-2.png');
+	background-repeat: no-repeat;
+	background-size:2000px 100vh;
+	height:100%;
+}
+
+h2{
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 40px;
+	text-indent:4em;
+	padding:10px;
+}
+
+.aboutp{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 18px;
+	text-align:left;
+	width:40%;
+}
+
+
+.me{
+	height:400px;
+	width:auto;
+	border-radius:5px;
+	
+}
+
+.flex{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	padding:20px;
+	margin:20px;
+}
+
+.slider{ 
+	display:flex;
+	justify-content:center;
+	/*overflow-x:scroll;*/
+	text-indent: 6em;
+}
+
+.slide{
+	display:block;
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 30px;
+	background-color:#3C3A53;
+	text-align:center;
+	padding:30px;
+	border: 1px #;
+	
+}
+
+/*Make each slide an individual box */
+
+@media screen and (min-width: 1600px){
+	body{	
+	height:95%;
+	background-size: 100% 100% ;
+	}
+	.vector{
+	height:300px;
+	width:300px;
+	margin-right:350px;
+	margin-top:300px;
+	}
+}
+
+@media screen and (max-width:800px){
+	body{
+	background-image: url("../images/mob-vector-1.png");
+	background-size:contain;
+	
+	
+	}
+		
+	.vector{
+		display:none;
+	}
+	
+	.line{
+		display:none;
+	}
+	h1{
+		font-size:19px;
+		text-indent:0.5em;
+	}
+	p{
+		font-size:15px;
+	}
+	nav .mainMenu{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:500px;
+		z-index:3;
+		flex-direction:column;
+		justify-content:flex-start;
+		background-color: #3C3A53;
+		transition: 1s ease;
+		display:none;
+		font-size:25px;
+	}
+	nav .mainMenu .closeMenu {
+		display:block;
+		position:absolute;
+		top: 5px;
+		left: 5px;
+		
+	}
+	nav .openMenu{
+		display:block;
+		position:fixed;
+		
+	}
+	
+	nav .mainMenu a:hover; {
+		font-size:27px;
+		color:#F3CCFF;
+		transition: 0.3s ease;
+	}
+	
+	.arrow{
+		display:block;
+		font-size:44px;
+		
+	}
+
+	.slider{ 
+	overflow-x:scroll;
+}
+
+	.me{
+		height:275px;
+		width:auto;
+	}
+	
+	.flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	padding:20px;
+	margin:20px;
+}
+
+}
+
+/* Project Pages */
+
+body #projects{
+	background-size:0px;
+} 
+
+body #UI{
+	background-image: url("../images/dt-vector-3.5.png");
+	background-size:contain;
+	background-size:2000px 100vh;
+}
+
+body #webdesign{
+	background-image: url("../images/dt-vector-1.png");
+	background-size:contain;
+	background-size:2000px 100vh;
+}
+
+body #javascript{
+	background-image: url("../images/dt-vector-2.png");
+	background-size:contain;
+	background-size:2000px 100vh;
+}
+
+body #graphicdesign{
+	background-image: url("../images/dt-vector-3.png");
+	background-size:contain;
+	background-size:2000px 100vh;
+}
+.descrip{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 16px;
+	text-align:left;
+	text-indent:12em;
+}
+
+figure img{
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+	transition: transform .3s;
+}
+figure img:hover{
+	transform:scale(1.25);
+}
+figure figcaption h3{
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 22px;
+}
+
+figure figcaption p{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 16px;
+}
+
+figure figcaption{
+	text-align:center;
+	width:65%;
+}
+
+.display{
+	display:flex;
+	margin-left:235px;
+}
+.display img{
+	width:250px;
+	height:auto;
+}
+
+.display2{
+	display:flex;
+	margin-left:235px;
+}
+
+.display2 img{
+	width:85%;
+}
+	
+.display3 img{
+	width:98%;	
+}
+
+.display3 figcaption{
+	width:75%
+}
+
+.display3 {
+	display:flex;
+	margin-left:235px;
+}
+
+
+
+
+
+@media screen and (max-width: 1584px){
+	body{
+		height:100%;
+		width:100%;
+		background-size:100% 100%;
+		
+	}
+	
+	.text{ 
+	display:flex;
+	flex-direction:column;
+	align-content:center;
+	justify-content:center;
+	
+	}
+
+	p{
+	margin-top:5px;
+	}
+
+	.vector{
+
+	margin-top:200px;
+	
+	}
+		
+	
+}
+
