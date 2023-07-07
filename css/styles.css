@@ -260,87 +260,7 @@ h2{
 	}
 }
 
-@media screen and (max-width:800px){
-	body{
-	background-image: url("../images/mob-vector-1.png");
-	background-size:contain;
-	
-	
-	}
-		
-	.vector{
-		display:none;
-	}
-	
-	.line{
-		display:none;
-	}
-	h1{
-		font-size:19px;
-		text-indent:0.5em;
-	}
-	p{
-		font-size:15px;
-	}
-	nav .mainMenu{
-		position:fixed;
-		top:0;
-		left:0;
-		width:300px;
-		height:500px;
-		z-index:3;
-		flex-direction:column;
-		justify-content:flex-start;
-		background-color: #3C3A53;
-		transition: 1s ease;
-		display:none;
-		font-size:25px;
-	}
-	nav .mainMenu .closeMenu {
-		display:block;
-		position:absolute;
-		top: 5px;
-		left: 5px;
-		
-	}
-	nav .openMenu{
-		display:block;
-		position:fixed;
-		
-	}
-	
-	nav .mainMenu a:hover; {
-		font-size:27px;
-		color:#F3CCFF;
-		transition: 0.3s ease;
-	}
-	
-	.arrow{
-		display:block;
-		font-size:44px;
-		
-	}
 
-	.slider{ 
-	overflow-x:scroll;
-}
-
-	.me{
-		height:275px;
-		width:auto;
-	}
-	
-	.flex{
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-	gap:20px;
-	padding:20px;
-	margin:20px;
-}
-
-}
 
 /* Project Pages */
 
@@ -475,3 +395,208 @@ figure figcaption{
 	
 }
 
+.contacth{
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 37px;
+	text-indent:4em;
+	padding:10px;
+}
+
+.contactb{
+	border-radius:5px;
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 16px;
+	text-align:center;
+	background-color:#A239EA;
+	margin-left:300px;
+	border:none;
+	display:inline-block;
+	padding:0.35em 1.2em;	
+	
+}
+.contactb:hover{
+	border:2px #0002ai solid;
+	transition:ease 0.1s;
+}
+	
+	@media screen and (max-width:800px){
+	body{
+	background-image: url("../images/mob-vector-1.png");
+	background-size:fill;
+	
+	
+	}
+		
+	.vector{
+		display:none;
+	}
+	
+	.line{
+		display:none;
+	}
+	h1{
+		font-size:19px;
+		text-indent:0.5em;
+	}
+	p{
+		font-size:15px;
+	}
+	nav .mainMenu{
+		position:fixed;
+		top:0;
+		left:0;
+		width:300px;
+		height:500px;
+		z-index:3;
+		flex-direction:column;
+		justify-content:flex-start;
+		background-color: #3C3A53;
+		transition: 1s ease;
+		display:none;
+		font-size:25px;
+	}
+	nav .mainMenu .closeMenu {
+		display:block;
+		position:absolute;
+		top: 5px;
+		left: 5px;
+		
+	}
+	nav .openMenu{
+		display:block;
+		position:fixed;
+		
+	}
+	
+	nav .mainMenu a:hover; {
+		font-size:27px;
+		color:#F3CCFF;
+		transition: 0.3s ease;
+	}
+	
+	.arrow{
+		display:block;
+		font-size:44px;
+		
+	}
+
+	.slider{ 
+	overflow-x:scroll;
+}
+
+	.me{
+		height:275px;
+		width:auto;
+	}
+	
+	.flex{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+	padding:20px;
+	margin:20px;
+}
+body #about{
+		background-image:url("../images/mob-vector-2.png");
+		background-size:fill;
+	
+	
+}
+body #projects{
+	background-size:0px;
+} 
+
+body #UI{
+	background-image: url("../images/mob-vector-3.png");
+	background-size:fill;
+}
+
+body #webdesign{
+	background-image: url("../images/mob-vector-4.png");
+	background-size:fill;
+
+}
+
+body #javascript{
+	background-image: url("../images/mob-vector-5.png");
+	background-size:fill;
+	
+}
+
+body #graphicdesign{
+	background-image: url("../images/mob-vector-1.png");
+	background-size:fill;
+	
+}
+
+
+}
+
+/** Oh so polished Styles**/
+
+.oh-so-polished h1{
+	text-indent:8em;
+padding:16px;
+}
+
+.oh-so-polished p{
+	font-size:19px;
+	width:65%;
+	padding:16px;
+}
+
+.sidebyside{
+	display:flex;
+	align-items:center;
+	margin-left:400px;
+	margin-top:200px;
+	
+}
+
+.oh-so-polished{
+	background-image: url("../images/dt-vector-3.5.png");
+	background-size:contain;
+	background-size: 2000px 1000px;
+}
+
+.oh-so-polished-cont{
+	background-image: url("../images/dt-vector-1.png");
+	background-size:contain;
+	background-size: 2000px 1000px;
+}
+
+.oh-so-polished-cont p{
+	font-size:19px;
+	width:45%;
+	padding:6px;
+}
+
+.sidebyside2{
+	display:flex;
+	align-items:center;
+	margin-left:300px;
+	margin-top:200px;
+
+}
+
+
+.tablet{
+	position:relative;
+	z-index:1;
+}
+
+.osp-vid{
+	position:absolute;
+	z-index: 6;
+	left:1050px;
+	top:3450px;
+	
+}
