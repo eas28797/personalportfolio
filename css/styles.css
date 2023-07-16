@@ -10,6 +10,7 @@ font-style: normal;
 */
 *{
 	box-sizing: border-box;
+	
 	scroll-behavior: smooth;
 }
 
@@ -205,6 +206,7 @@ h2{
 	font-size: 18px;
 	text-align:left;
 	width:40%;
+	line-height:23px;
 }
 
 
@@ -228,7 +230,6 @@ h2{
 	display:flex;
 	justify-content:center;
 	/*overflow-x:scroll;*/
-	text-indent: 6em;
 }
 
 .slide{
@@ -239,10 +240,10 @@ h2{
 	color: #f0d9e7;
 	font-size: 30px;
 	background-color:#3C3A53;
-	text-align:center;
 	padding:30px;
-	border: 1px #;
-	
+	margin-right:60px; 
+	border-radius:5px;
+	/*fix offcenter*/
 }
 
 /*Make each slide an individual box */
@@ -270,8 +271,8 @@ body #projects{
 
 body #UI{
 	background-image: url("../images/dt-vector-3.5.png");
-	background-size:contain;
-	background-size:2000px 100vh;
+		background-size:contain;
+	background-size:2000px 1000px;
 }
 
 body #webdesign{
@@ -291,6 +292,11 @@ body #graphicdesign{
 	background-size:contain;
 	background-size:2000px 100vh;
 }
+body #contact{
+	background-image: url("../images/dt-vector-2.png");
+	background-size:contain;
+	background-size:2000px 100vh;
+}
 .descrip{
 	font-family: "ocr-a-std", monospace;
 	font-weight: 400;
@@ -301,21 +307,25 @@ body #graphicdesign{
 	text-indent:12em;
 }
 
+body #UI h2{
+	margin-top:35px;
+}
+
 figure img{
 	border-radius:5px;
-	margin-left:auto;
-	margin-right:auto;
 	transition: transform .3s;
 }
 figure img:hover{
 	transform:scale(1.25);
 }
+
 figure figcaption h3{
 	font-family: "century-gothic", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: #f0d9e7;
 	font-size: 22px;
+	text-align:center;
 }
 
 figure figcaption p{
@@ -324,33 +334,33 @@ figure figcaption p{
 	font-style: normal;
 	color: #f0d9e7;
 	font-size: 16px;
+	text-align:center;
+	line-height:25px;
 }
 
-figure figcaption{
-	text-align:center;
+ figure figcaption{
 	width:65%;
+	margin: auto 12px ;
 }
 
 .display{
 	display:flex;
-	margin-left:235px;
+	justify-content:center;
 }
-.display img{
-	width:250px;
-	height:auto;
-}
+
+
 
 .display2{
 	display:flex;
-	margin-left:235px;
+	justify-content:center;
 }
 
-.display2 img{
+.display2 figure img{
 	width:85%;
 }
 	
-.display3 img{
-	width:98%;	
+.display3 figure img{
+	width:86%;	
 }
 
 .display3 figcaption{
@@ -359,9 +369,20 @@ figure figcaption{
 
 .display3 {
 	display:flex;
-	margin-left:235px;
+	justify-content:center;
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
+
+.display4{
+	display:flex;
+	justify-content:center;
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 
 
@@ -401,29 +422,11 @@ figure figcaption{
 	font-style: normal;
 	color: #f0d9e7;
 	font-size: 37px;
-	text-indent:4em;
+	margin-left:500px;
 	padding:10px;
 }
 
-.contactb{
-	border-radius:5px;
-	font-family: "ocr-a-std", monospace;
-	font-weight: 400;
-	font-style: normal;
-	color: #f0d9e7;
-	font-size: 16px;
-	text-align:center;
-	background-color:#A239EA;
-	margin-left:300px;
-	border:none;
-	display:inline-block;
-	padding:0.35em 1.2em;	
-	
-}
-.contactb:hover{
-	border:2px #0002ai solid;
-	transition:ease 0.1s;
-}
+
 	
 	@media screen and (max-width:800px){
 	body{
@@ -599,4 +602,110 @@ padding:16px;
 	left:1050px;
 	top:3450px;
 	
+}
+ /**Contact page form styles**/
+
+ form{
+	 display:flex;
+	 justify-content:center;
+	 flex-direction:column;
+	 width:38%;
+	 text-indent:2em;
+	 margin-left:auto;
+	 margin-right:auto;
+ }
+ 
+ 
+ input[type = text]{
+	padding:10px;
+	margin:10px;
+	border:0;
+	box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+	border-radius:5px;
+	width:400px;
+	font-size:15px;
+	background-color:#f0d9e7;
+}
+ 
+input[type = text], label {
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+
+}
+
+label{
+	font-size:20px;
+}
+
+.contactb , input[type = submit]{
+	border-radius:5px;
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 25px;
+	text-align:center;
+	background-color:#A239EA;
+	border:none;
+	display:inline-block;
+	padding:0.35em 1.2em;	
+}
+.contactb{
+margin-left:630px;
+}
+.contacth2{
+	font-family: "century-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 37px;
+	margin-left:350px;
+
+}
+input[type = submit]{
+	width:50%;
+	margin-left:30px;
+}
+
+input[type = submit]:active{
+	
+	transform:scale(1.1);
+}
+
+.contactb:hover, input[type = submit]:hover{
+	background-color: #0002A1;
+	transition: ease 0.1s;
+	animation: bounce 1.5s infinite;
+
+}
+
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.pC{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 24px;
+	margin-left:550px;
+	text-decoration-line:underline;
+	text-decoration-color: #f0d9e7;
+}
+
+.email1{
+	font-family: "ocr-a-std", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #f0d9e7;
+	font-size: 14px;
 }
