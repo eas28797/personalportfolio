@@ -545,15 +545,16 @@ body #graphicdesign{
 
 /** Oh so polished Styles**/
 
-.oh-so-polished h1{
+#oh-so-polished h1{
 	text-indent:8em;
 padding:16px;
 }
 
-.oh-so-polished p{
+#oh-so-polished p{
 	font-size:19px;
 	width:65%;
 	padding:16px;
+	line-height:35px;
 }
 
 .sidebyside{
@@ -564,22 +565,23 @@ padding:16px;
 	
 }
 
-.oh-so-polished{
+#oh-so-polished{
 	background-image: url("../images/dt-vector-3.5.png");
 	background-size:contain;
 	background-size: 2000px 1000px;
 }
 
-.oh-so-polished-cont{
+#oh-so-polished-cont{
 	background-image: url("../images/dt-vector-1.png");
 	background-size:contain;
 	background-size: 2000px 1000px;
 }
 
-.oh-so-polished-cont p{
+#oh-so-polished-cont p{
 	font-size:19px;
 	width:45%;
 	padding:6px;
+	line-height:35px;
 }
 
 .sidebyside2{
@@ -600,7 +602,7 @@ padding:16px;
 	position:absolute;
 	z-index: 6;
 	left:1050px;
-	top:3450px;
+	top:5325px;
 	
 }
  /**Contact page form styles**/
@@ -708,4 +710,149 @@ input[type = submit]:active{
 	font-style: normal;
 	color: #f0d9e7;
 	font-size: 14px;
+}
+
+/**Floral Shop Styles**/
+
+.fs-home{
+	height:500px;
+	width:auto;
+	position:relative;
+	z-index:1;
+	
+}
+
+.fs-arrange{
+	height:470px;
+	width:auto;
+	position:absolute;
+	z-index: 2;
+	left:560px;
+	top:380px;
+}
+
+#floral-shop h1{
+	text-indent:8em;
+	padding:16px;
+}
+
+.fsp{
+	
+	font-size:20px;
+	width:65%;
+	padding:16px;
+	margin-left:125px;
+	line-height:35px;
+	
+}
+
+
+
+.fs-flex{
+	display:flex;
+	align-items:center;
+	margin-left:400px;
+	margin-top:200px;
+}
+
+
+
+#floral-shopcont{
+	background-image: url("../images/dt-vector-2.png");
+	background-size:contain;
+	background-size: 2000px 1000px;
+}
+
+.stickersheet{
+	height:500px;
+	width:auto;
+	border-radius:5px;
+	padding:20px;
+	
+}
+
+.fs-flex2{
+	display:flex;
+	align-items:center;
+	margin-left:100px;
+
+}
+
+.fsp2{
+	
+	font-size:20px;
+	width:55%;
+	padding:16px;
+	margin-left:125px;
+	line-height:35px;
+	
+}
+
+/**Scar's Honey **/
+
+#scars-honey{
+	background-image: url("../images/dt-vector-1.png");
+	background-size:contain;
+	background-size: 2000px 1000px;
+}
+
+#scars-honey h1{
+	text-indent:8em;
+	padding:16px;
+}
+
+.shp{
+	font-size:20px;
+	width:55%;
+	padding:16px;
+	line-height:35px;
+}
+
+.hp{
+	height:430px;
+	width:auto;
+	position:relative;
+	z-index:1;
+	margin-left:205px;
+}
+
+.shscroll{
+	position:absolute;
+	z-index:2;
+	left:1230px;
+	top:2200px;
+}
+
+.sh-flex{
+	display:flex;
+	align-items:center;
+	margin-left:300px;
+}
+
+#scars-honey2{
+	background-image: url("../images/dt-vector-2.png");
+	background-size:contain;
+	background-size: 2000px 1000px;
+}
+
+.colors{
+	height:auto;
+	width: 700px;
+	margin-left: 600px;
+	margin-top: 250px;
+	
+}
+
+.shd{
+	
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.shp2{
+	font-size:20px;
+	width:55%;
+	padding:16px;
+	line-height:35px;
+	margin-left:425px;
 }
